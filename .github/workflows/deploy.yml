@@ -21,8 +21,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Show ENV
-        run: echo "ENV is ${{ vars.VITE_ENV }}"
+      - name: Generate .env file
+        run: echo "VITE_ENV = ${{ vars.VITE_ENV }}" >> .env
 
       - name: Build the app
         run: npm run build
