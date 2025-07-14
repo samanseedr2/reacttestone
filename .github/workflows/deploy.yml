@@ -22,10 +22,10 @@ jobs:
         run: npm install
 
       - name: Set environment variables
-        run: echo "VITE_ENV=${{ secrets.VITE_ENV }}" >> .env
+        run: echo "VITE_ENV=${{ vars.VITE_ENV }}" >> .env
 
       - name: SHow env variable
-        run: echo "VITE_ENV=${{ secrets.VITE_ENV }}"
+        run: echo "VITE_ENV=${{ vars.VITE_ENV }}"
 
       - name: Build the app
         run: npm run build
