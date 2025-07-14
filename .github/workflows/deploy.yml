@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - main
-env:
-  VITE_ENV: gh
 
 jobs:
   deploy:
@@ -22,6 +20,9 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+
+      - name: Set environment variables
+        run: echo "VITE_ENV=${{ secrets.VITE_ENV }}" >> .env
 
       - name: Build the app
         run: npm run build
