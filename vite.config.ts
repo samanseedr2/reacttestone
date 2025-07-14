@@ -8,7 +8,7 @@ export default defineConfig(({ mode }) => {
 
   return {
     plugins: [react()],
-    base: env.VITE_ENV == "gh" ? "/reacttestone" : "/",
+    base: env.VITE_ENV == "gh" ? "./" : "/",
     build: { outDir: "build" },
   };
 });
