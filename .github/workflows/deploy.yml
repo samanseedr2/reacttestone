@@ -23,6 +23,8 @@ jobs:
 
       - name: Set environment variables
         run: echo "VITE_ENV=${{ secrets.VITE_ENV }}" >> .env
+
+      - name: SHow env variable
         run: echo "VITE_ENV=${{ secrets.VITE_ENV }}"
 
       - name: Build the app
