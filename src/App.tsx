@@ -7,7 +7,7 @@ function App() {
       <AuthComponent>
         {/* <FileUpload /> */}
         <TestComponent />
-        <h4>This is App Component</h4>
+        <h4>App Component</h4>
       </AuthComponent>
     </>
   );
